@@ -134,7 +134,7 @@
   <p><strong>Jeśli nie czujesz się na siłach aby korzystać z głównej bazy programu, możesz użyć alternatywnego folderu - \\ant.amazon.com\fc\Dept\AMZL\EU\West\KTW4\Internal\10)BAZATESTSHIFTPLAN</strong></p>
 
   <div class="shot">
-    <img src="/first-run.png" alt="Okno informacji startowej">
+    <img src="first-run.png" alt="Okno informacji startowej">
   </div>
 
   <h3>Co trzeba ustawić na starcie</h3>
