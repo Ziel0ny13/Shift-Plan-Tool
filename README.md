@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Instrukcja obsługi Shift Plan Tool</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 36px;
+      color: #1f2937;
+      line-height: 1.5;
+      background: #ffffff;
+    }
+    h1, h2, h3 {
+      color: #123b69;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      border-bottom: 3px solid #1d5fa7;
+      padding-bottom: 10px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 28px;
+      border-bottom: 1px solid #d7e3f1;
+      padding-bottom: 4px;
+    }
+    h3 {
+      font-size: 16px;
+      margin-top: 18px;
+    }
+    p, li {
+      font-size: 11pt;
+    }
+    .meta, .note, .warning {
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin: 14px 0;
+    }
+    .meta {
+      background: #eef5fc;
+      border-left: 5px solid #1d5fa7;
+    }
+    .note {
+      background: #f3f8ef;
+      border-left: 5px solid #4b8b3b;
+    }
+    .warning {
+      background: #fff6e8;
+      border-left: 5px solid #c77b15;
+    }
+    .shot {
+      margin: 18px 0 10px;
+      text-align: center;
+    }
+    .shot img {
+      max-width: 100%;
+      border: 1px solid #cbd5e1;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
+    }
+    .caption {
+      font-size: 10pt;
+      color: #4b5563;
+      margin-top: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+    }
+    th, td {
+      border: 1px solid #d7e3f1;
+      padding: 8px 10px;
+      vertical-align: top;
+      font-size: 10.5pt;
+    }
+    th {
+      background: #eef5fc;
+      text-align: left;
+    }
+    ul.toc {
+      padding-left: 20px;
+    }
+    .small {
+      font-size: 10pt;
+      color: #1adb00;
+    }
+    .big {
+      font-size: 20pt;
+      color: #230946;
+    }
+  </style>
+</head>
+<body>
+  <h1>Instrukcja obsługi programu Shift Plan Tool</h1>
+
+  <div class="meta">
+    <strong>Cel dokumentu:</strong> ta instrukcja ma pomóc osobie, która pierwszy raz uruchamia program, zrozumieć cały workflow: od konfiguracji, przez pracowników i uprawnienia, po szkolenia, overtime i tworzenie planów obsady.<br>
+    <strong>Wersja instrukcji:</strong> przygotowana na podstawie aktualnego projektu w katalogu <code>SHIFT PLAN TOOL</code>.<br>
+    <strong>Docelowi użytkownicy:</strong> liderzy, trenerzy, osoby planujące obsadę oraz użytkownicy administrujący danymi.
+  </div>
+
+  <h2>Spis treści</h2>
+  <ul class="toc">
+    <li>1. Do czego służy program</li>
+    <li>2. Pierwsze uruchomienie</li>
+    <li>3. Główne okno programu</li>
+    <li>4. Zakładka Pracownicy</li>
+    <li>5. Zakładka Uprawnienia</li>
+    <li>6. Zakładka Planowane Szkolenia</li>
+    <li>7. Zakładka Overtime</li>
+    <li>8. Zakładka Shift Plans</li>
+    <li>9. Ustawienia programu</li>
+  </ul>
+
+  <h2>1. Do czego służy program</h2>
+  <p>Shift Plan Tool to narzędzie do pracy operacyjnej z danymi pracowników i planami zmian. Program łączy w sobie kilka obszarów, które normalnie są rozproszone:</p>
+  <ul>
+    <li>przegląd i aktualizację listy pracowników,</li>
+    <li>podgląd i ręczne zarządzanie uprawnieniami procesowymi,</li>
+    <li>planowanie szkoleń,</li>
+    <li>zarządzanie overtime,</li>
+    <li>tworzenie i edycję planów obsady na konkretną datę i zmianę.</li>
+  </ul>
+
+  <div class="note">
+    Program korzysta z danych zapisanych w folderze współdzielonym. Oznacza to, że poprawna konfiguracja ścieżki danych przy pierwszym uruchomieniu jest kluczowa dla działania całego narzędzia.
+  </div>
+
+  <h2>2. Pierwsze uruchomienie</h2>
+  <p>Jeżeli program jest uruchamiany po raz pierwszy albo nie ma ustawionej ścieżki folderu współdzielonego, otworzy się okno konfiguracji początkowej. W tym miejscu musimy wybrać folder współdzielony.</p>
+  <p>Folder główny którego używamy to - <strong>\\ant.amazon.com\fc\Dept\AMZL\EU\West\KTW4\Internal\9)SHIFT PLAN TOOL</strong></p>
+  <p><strong>Jeśli nie czujesz się na siłach aby korzystać z głównej bazy programu, możesz użyć alternatywnego folderu - \\ant.amazon.com\fc\Dept\AMZL\EU\West\KTW4\Internal\10)BAZATESTSHIFTPLAN</strong></p>
+
+  <div class="shot">
+    <img src="../manual_assets/first-run.png" alt="Okno informacji startowej">
+  </div>
+
+  <h3>Co trzeba ustawić na starcie</h3>
+  <ol>
+    <li>Wybrać swoje FC.</li>
+    <li>Wskazać folder współdzielony, w którym program ma trzymać dane.</li>
+    <li>Zatwierdzić konfigurację.</li>
+  </ol>
+
+  <p>Po poprawnym zapisaniu konfiguracji program może poprosić o ponowne uruchomienie. Jest to normalne zachowanie.</p>
+
+  <div class="warning">
+    Jeśli nie wskażesz poprawnego folderu współdzielonego, część funkcji programu nie będzie działała poprawnie: zapis planów, odczyt danych, notatka startowa i część synchronizacji.
+  </div>
+
+  <h2>3. Główne okno programu</h2>
+  <p>Po uruchomieniu zobaczysz główne okno z górnym paskiem, zakładkami roboczymi oraz notką startową.</p>
+
+  <div class="big"><center><strong>Notka Startowa</strong></center></div>
+
+  <div class="shot">
+    <img src="../manual_assets/notka_startowa.png" alt="Główne okno programu">
+    <div class="caption">Po włączeniu programu ukazuje nam się notka startowa w której przedstawione są najważniejsze informacje odnośnie programu.</div>
+    <div class="caption">Roster - Tutaj mamy informację jak dawno temu był aktualizowany Roster (1-3 dni na żółty kolor, 3-7 dni pomarańczowy kolor, 7+ kolor czerwony)</div>
+    <div class="caption">Uprawnienia - Tutaj mamy informację jak dawno temu były aktualizowane Uprawnienia (1-3 dni na żółty kolor, 3-7 dni pomarańczowy kolor, 7+ kolor czerwony)</div>
+  </div>
+
+  <div class="shot">
+    <img src="../manual_assets/pracownicy1.png" alt="Główne okno programu">
+    <div class="caption">Główne okno programu. Układ zakładek i górny pasek są wspólne dla całej aplikacji.</div>
+  </div>
+
+  <h3>Elementy górnego paska</h3>
+  <table>
+    <tr>
+      <th>Element</th>
+      <th>Znaczenie</th>
+    </tr>
+    <tr>
+      <td>Sesja</td>
+      <td>Pokazuje czas pozostały do wygaszenia sesji z powodu bezczynności.</td>
+    </tr>
+    <tr>
+      <td>Zalogowano</td>
+      <td>Nazwa aktualnego użytkownika Windows.</td>
+    </tr>
+    <tr>
+      <td>FC</td>
+      <td>Aktualnie ustawione centrum logistyczne.</td>
+    </tr>
+    <tr>
+      <td>Ikona koła zębatego</td>
+      <td>Otwiera ustawienia programu.</td>
+    </tr>
+  </table>
+
+  <h3>Dostępne zakładki</h3>
+  <ul>
+    <li><strong>Pracownicy</strong> – lista pracowników oraz import rostera.</li>
+    <li><strong>Uprawnienia</strong> – przegląd i edycja uprawnień procesowych.</li>
+    <li><strong>Planowane Szkolenia</strong> – planowanie szkoleń na konkretne daty.</li>
+    <li><strong>Overtime</strong> – zarządzanie nadgodzinami.</li>
+    <li><strong>Shift Plans</strong> – lista planów obsady, edycja i tworzenie nowych planów.</li>
+  </ul>
+
+  <h2>4. Zakładka Pracownicy</h2>
+  <p>Zakładka służy do przeglądania, filtrowania i podstawowej administracji listą pracowników.</p>
+
+  <h3>Najważniejsze funkcje</h3>
+  <ul>
+    <li>pole <strong>Szukaj</strong> – wyszukiwanie po danych pracownika,</li>
+    <li>filtr <strong>Typ</strong> i <strong>Manager</strong>,</li>
+    <li>przyciski <strong>Dodaj</strong>, <strong>Edytuj</strong>, <strong>Usuń</strong> - Pozwala dodawać manualnie, edytować lub usuwać pracownika z używanego w programie rosteru (Np. dodawania pracowników z KTW1 na nadgodziny)</li>
+    <li>przycisk <strong>Pobierz Roster</strong> – pobranie aktualnej listy z FCLM.</li>
+  </ul>
+
+  <h3>Jak odświeżyć roster z FCLM</h3>
+
+  <div class="shot">
+    <img src="../manual_assets/pracownicy2.png" alt="Główne okno programu">
+    <div class="caption">Kliknij przycisk "Pobierz Roster"</div>
+  </div>
+
+  <div class="shot">
+    <img src="../manual_assets/pracownicy3.png" alt="Główne okno programu">
+    <div class="caption">Następnie "Pobierz z ZYZ1". Po autoryzacji za pomocą tokena roster powinien pobrać się automatycznie z FCLM.</div>
+  </div>
+  <div><center><strong> GOTOWE! </strong></center></div>
+
+  <div class="note">
+    Jeżeli autoryzacja mwinit zakończy się niepowodzeniem, okno pobierania pozostanie dostępne i możesz spróbować ponownie bez restartu programu.
+  </div>
+
+  <h2>5. Zakładka Uprawnienia</h2>
+  <p>Ta zakładka pokazuje, jakie uprawnienia procesowe mają poszczególni pracownicy. Można automatycznie pobrać informacje z FCLM ale również dodać uprawniania ręcznie. </p>
+
+  <h3>Najważniejsze przyciski</h3>
+  <ul>
+    <li><strong>Pobierz z FCLM</strong> - Automatyczne pobieranie danych z FCLM (procesy od PICK do Popsocket)</li>
+    <li><strong>Odśwież</strong> - Po wprowadzeniu danych możliwość manualnego odświeżenia tabeli (nie jest obowiązkiem odświeżanie po pobraniu danych)</li>
+    <li><strong>Szczegóły</strong> - Po zaznaczeniu pracownika i wciśnięciu tego przycisku dostajemy komplet informacji o uprawnianiach danego pracownika</li>
+    <li><strong>Dodaj ręcznie</strong> - Możliwość dodania pracownikowi ręcznie uprawnień, przydatne w przypadku dodawania uprawnień dla WS, LEAD, AM oraz wszystkich Instruktorów (aby dodać uprawnienia dla kilku pracowników naraz wystarczy trzymać <strong>LEWY CTRL</strong>)</li>
+    <li><strong>Cofnij</strong> - W przypadku pomyłki lub przypadkowego dodania uprawnień mamy możliwość cofnięcia takowych uprawnień za pomocą tej funkcji</li>
+  </ul>
+
+  <div class="shot">
+    <img src="../manual_assets/uprawnienia1.png" alt="Okno uprawnień">
+    <div class="caption">Aby pobrać aktualne dane z FCLM należy kliknąć przycisk zaznaczony na screenie poniżej. </div>
+  </div>
+
+  <div class="shot">
+    <img src="../manual_assets/uprawnienia2.png" alt="Okno uprawnień">
+    <div class="caption">Następnie wybieramy ilość dni, klikamy "Pobierz Dane" i łączymy się w wyskakującym oknie za pomocą tokena.</div>  
+  </div>
+
+  <div class="shot">
+    <img src="../manual_assets/uprawnienia3.png" alt="Okno uprawnień">
+    <div class="caption"></div>
+  </div>
+
+  <p>W tabeli każda kolumna procesu pokazuje status danego uprawnienia dla pracownika. Zakładka ma też filtry po procesie i źródle danych.</p>
+  <p>Kolorem złotym zaznaczone są osoby z uprawnieniami LEAD oraz AM. Te uprawnienia są potrzebne w przypadku odblokowywania i zablokowywania programu wyświetlanego na tablicy wirtualnej (Strefa Start-up).</p>
+  <p>Po pobraniu danych z FCLM tabela uzupełni się sama bez dodatkowej ingerencji Leadera bądź Managera. Uzupełnianie danych może chwilkę potrwać także musisz uzbroić się w cierpliwość.</p>
+
+  <div class="note">
+    Jeżeli program podczas przeskakiwania pomiędzy zakładkami nie będzie odpowiadać, <strong>daj mu chwilę i nie panikuj</strong>. Program przetwarza bardzo dużo danych i nie jest jeszcze wystarczająco dobrze zoptymalizowany.
+  </div>
+
+  <h2>6. Zakładka Planowane Szkolenia</h2>
+  <p>Zakładka wspiera planowanie szkoleń dla pracowników, którzy jeszcze nie mają odpowiednich uprawnień albo wymagają zaplanowania szkolenia.</p>
+
+  <h3>Układ ekranu</h3>
+  <ul>
+    <li>po lewej – lista pracowników bez szkolenia dla wybranego procesu,</li>
+    <li>po prawej – kalendarz i lista szkoleń zaplanowanych na wybrany dzień.</li>
+  </ul>
+
+  <h3>Typowy sposób pracy</h3>
+  <ol>
+    <li>Wybierz proces i ewentualnie managera.</li>
+    <li>Zaznacz jednego lub kilku (trzymając lewy CTRL) pracowników z lewej strony.</li>
+    <li>W kalendarzu po prawej wybierz datę szkolenia.</li>
+    <li>Kliknij <strong>Zaplanuj szkolenie dla zaznaczonych</strong>.</li>
+  </ol>
+
+  <p>Na dole / po prawej stronie można od razu podejrzeć, kto już jest zapisany na wybrany dzień.</p>
+
+  <div class="warning">Więcej przeszkolenia z tej funkcji odbędzie się przed PRIME TIME gdy szkolenie nowych pracowników będzie planowane w dużej ilości.</div>
+
+  <h2>7. Zakładka Overtime</h2>
+  <p>Moduł overtime służy do planowania nadgodzin dla pracowników na konkretną datę i zmianę.</p>
+
+  <h3>Co znajdziesz w tej zakładce</h3>
+  <ul>
+    <li>kalendarz wyboru daty,</li>
+    <li>widok zmiany,</li>
+    <li>sekcję dodawania pracowników do overtime,</li>
+    <li>listę już dodanych osób,</li>
+    <li>możliwość sprawdzania uprawnień pracownika z poziomu overtime.</li>
+  </ul>
+
+  <h3>Przykładowy workflow</h3>
+  <ol>
+    <li>Wybierz datę.</li>
+    <li>Wybierz zmianę, jeżeli funkcja tego wymaga.</li>
+    <li>Wyszukaj lub zeskanuj pracownika.</li>
+    <li>Dodaj go do listy overtime.</li>
+    <li>W razie potrzeby podejrzyj jego uprawnienia przed zatwierdzeniem.</li>
+  </ol>
+
+  <h2>8. Zakładka Shift Plans</h2>
+  <p>To najważniejszy moduł dla osoby planującej obsadę. Pozwala tworzyć nowe plany, otwierać istniejące, usuwać je i generować raport SOS.</p>
+
+  <h3>Ekran listy planów</h3>
+  <ul>
+    <li><strong>Nowy</strong> – tworzy nowy plan na podstawie wybranego layoutu,</li>
+    <li><strong>Edytuj</strong> – otwiera zaznaczony plan,</li>
+    <li><strong>Usuń</strong> – usuwa plan,</li>
+    <li><strong>SOS Raport</strong> – generuje raport dla zaznaczonego planu.</li>
+  </ul>
+
+  <h3>Tworzenie nowego planu</h3>
+
+  <div class="shot">
+    <img src="../manual_assets/shiftplan1.png" alt="Okno uprawnień">
+    <div class="caption"></div>
+  </div>
+
+  <div class="shot">
+    <img src="../manual_assets/shiftplan2.png" alt="Okno uprawnień">
+    <div class="caption">Wybieramy datę oraz Zmianę DS/NS</div>
+  </div>
+
+  <div class="shot">
+    <img src="../manual_assets/shiftplan3.png" alt="Okno uprawnień">
+    <div class="caption">Klikamy Wczytaj HC_TOD i wybieramy plik</div>
+  </div>
+
+  <div class="shot">
+    <img src="../manual_assets/shiftplan4.png" alt="Okno uprawnień">
+    <div class="caption"></div>
+  </div>
+
+  <div class="shot">
+    <img src="../manual_assets/shiftplan5.png" alt="Okno uprawnień">
+    <div class="caption">Następnie otwieramy edytor planu</div>
+  </div>
+
+  <div class="shot">
+    <img src="../manual_assets/shiftplan6.png" alt="Okno uprawnień">
+    <div class="caption"></div>
+  </div>
+
+  <div class="shot">
+    <img src="../manual_assets/shiftplan7.png" alt="Okno uprawnień">
+    <div class="caption">W lewym górnym rogu mamy zliczanie pracowników, datę zmiany oraz przycisk do zapisywania oraz czyszczenia planu.</div>
+  </div>
+
+  <h3>Funkcjonalności</h3>
+  <li>Możliwość przeciągania z listy po prawej stronie na stanowisku na którym chcemy obsadzić danego pracownika</li>
+  <li>Kliknięcie prawym przyciskiem myszy na planie pozwala oznaczyć pracownika czerwoną kropką i ustawić ilość godzin pracy danego pracownika (oznaczenie pracownika czerwoną kropką zmniejsza capacity obliczane przez program)</li>
+  <li>Po prawej stronie mamy zakładkę proponowane w której wyświetla się proponowane stanowisko dla danego pracownika (najstarszy proces w którym uczestniczył dany pracownik, np. NECKTAG 30 dni temu )</li>
+  <li>W prawym górnym rogu znajduje się zakładka "Szkolenia" w której wypisane są szkolenia dla pracowników przypisanych do danego dnia w którym robimy plan. (Zapisywanie pracowników odbywa się w osobnej zakładce "Planowanie Szkoleń")
+  <li>Dwukrotne kliknięcie w pracownika na liście włącza szczegóły pracownika i jego uprawnień.</li>
+  <li>W przypadku gdy jakiś pracownik nie został zaciągnięty automatycznie można go dodać ręcznie z pomocą zakładki "+ Spoza". Wyszukujemy pracownika i przeciągamy go z listy na plan.</li><br>
+  <img src="../manual_assets/shiftplan8.png" alt="Okno uprawnień">
+  <img src="../manual_assets/shiftplan9.png" alt="Okno uprawnień">
+  <img src="../manual_assets/shiftplan10.png" alt="Okno uprawnień">
+
+  <div class="warning">
+    Przed usuwaniem lub nadpisywaniem planów upewnij się, że pracujesz na właściwej dacie i zmianie. W praktyce to najczęstsze źródło pomyłek.
+  </div>
+
+  <h2>9. Ustawienia programu</h2>
+  <p>Ustawienia otwierasz przez ikonę koła zębatego w prawym górnym rogu.</p>
+
+  <h3>Najważniejsze rzeczy, które można ustawić</h3>
+  <ul>
+    <li>FC,</li>
+    <li>ścieżkę folderu współdzielonego,</li>
+    <li>rozmiar okna,</li>
+    <li>tryb pełnoekranowy,</li>
+    <li>kolor akcentu,</li>
+    <li>notatkę startową dla zespołu,</li>
+    <li>import i zarządzanie layoutami.</li>
+  </ul>
+
+  <br>
+
+  <p>Koniec instrukcji. Pozdrawiam serdecznie.</p>
+
+  <div><strong></strong>_________</strong></div>
+  <p class="small"></strong>By MBBANIAK</strong></p>
+</body>
+</html>
