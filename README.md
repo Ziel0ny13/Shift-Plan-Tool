@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="utf-8">
@@ -305,6 +304,8 @@
     <li>W razie potrzeby podejrzyj jego uprawnienia przed zatwierdzeniem.</li>
   </ol>
 
+  <div class="warning">Więcej przeszkolenia z tej funkcji odbędzie się wkrótce - na ten moment możesz pominąć tą zakładkę</div>
+
   <h2>8. Zakładka Shift Plans</h2>
   <p>To najważniejszy moduł dla osoby planującej obsadę. Pozwala tworzyć nowe plany, otwierać istniejące, usuwać je i generować raport SOS.</p>
 
@@ -386,7 +387,6 @@
 
   <p>Koniec instrukcji. Pozdrawiam serdecznie.</p>
 
-  <div><strong></strong>_________</strong></div>
-  <p class="small"></strong>By MBBANIAK</strong></p>
-</body>
+  <div>_________</div>
+  <p class="small">By MBBANIAK</p>
 </html>
