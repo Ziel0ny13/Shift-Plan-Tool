@@ -281,7 +281,7 @@
 
   <p>Na dole / po prawej stronie można od razu podejrzeć, kto już jest zapisany na wybrany dzień.</p>
 
-  <div class="warning">Więcej przeszkolenia z tej funkcji odbędzie się przed PRIME TIME gdy szkolenie nowych pracowników będzie planowane w dużej ilości.</div>
+  <div class="warning"><strong></strong>Więcej przeszkolenia z tej funkcji odbędzie się przed PRIME TIME gdy szkolenie nowych pracowników będzie planowane w dużej ilości.</strong></div>
 
   <h2>7. Zakładka Overtime</h2>
   <p>Moduł overtime służy do planowania nadgodzin dla pracowników na konkretną datę i zmianę.</p>
@@ -304,7 +304,7 @@
     <li>W razie potrzeby podejrzyj jego uprawnienia przed zatwierdzeniem.</li>
   </ol>
 
-  <div class="warning">Więcej przeszkolenia z tej funkcji odbędzie się wkrótce - na ten moment możesz pominąć tą zakładkę</div>
+  <div class="warning"><strong>Więcej przeszkolenia z tej funkcji odbędzie się wkrótce - na ten moment możesz pominąć tą zakładkę</strong></div>
 
   <h2>8. Zakładka Shift Plans</h2>
   <p>To najważniejszy moduł dla osoby planującej obsadę. Pozwala tworzyć nowe plany, otwierać istniejące, usuwać je i generować raport SOS.</p>
