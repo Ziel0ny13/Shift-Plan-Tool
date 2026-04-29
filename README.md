@@ -134,7 +134,7 @@
   <p><strong>Jeśli nie czujesz się na siłach aby korzystać z głównej bazy programu, możesz użyć alternatywnego folderu - \\ant.amazon.com\fc\Dept\AMZL\EU\West\KTW4\Internal\10)BAZATESTSHIFTPLAN</strong></p>
 
   <div class="shot">
-    <img src="pracownicy1.png" alt="Główne okno programu">
+    <img src="first-run.png" alt="Główne okno programu">
   </div>
 
   <h3>Co trzeba ustawić na starcie</h3>
@@ -156,14 +156,14 @@
   <div class="big"><center><strong>Notka Startowa</strong></center></div>
 
   <div class="shot">
-    <img src="../manual_assets/notka_startowa.png" alt="Główne okno programu">
+    <img src="notka_startowa.png" alt="Główne okno programu">
     <div class="caption">Po włączeniu programu ukazuje nam się notka startowa w której przedstawione są najważniejsze informacje odnośnie programu.</div>
     <div class="caption">Roster - Tutaj mamy informację jak dawno temu był aktualizowany Roster (1-3 dni na żółty kolor, 3-7 dni pomarańczowy kolor, 7+ kolor czerwony)</div>
     <div class="caption">Uprawnienia - Tutaj mamy informację jak dawno temu były aktualizowane Uprawnienia (1-3 dni na żółty kolor, 3-7 dni pomarańczowy kolor, 7+ kolor czerwony)</div>
   </div>
 
   <div class="shot">
-    <img src="../manual_assets/pracownicy1.png" alt="Główne okno programu">
+    <img src="pracownicy1.png" alt="Główne okno programu">
     <div class="caption">Główne okno programu. Układ zakładek i górny pasek są wspólne dla całej aplikacji.</div>
   </div>
 
@@ -214,12 +214,12 @@
   <h3>Jak odświeżyć roster z FCLM</h3>
 
   <div class="shot">
-    <img src="../manual_assets/pracownicy2.png" alt="Główne okno programu">
+    <img src="pracownicy2.png" alt="Główne okno programu">
     <div class="caption">Kliknij przycisk "Pobierz Roster"</div>
   </div>
 
   <div class="shot">
-    <img src="../manual_assets/pracownicy3.png" alt="Główne okno programu">
+    <img src="pracownicy3.png" alt="Główne okno programu">
     <div class="caption">Następnie "Pobierz z ZYZ1". Po autoryzacji za pomocą tokena roster powinien pobrać się automatycznie z FCLM.</div>
   </div>
   <div><center><strong> GOTOWE! </strong></center></div>
@@ -241,17 +241,17 @@
   </ul>
 
   <div class="shot">
-    <img src="../manual_assets/uprawnienia1.png" alt="Okno uprawnień">
+    <img src="uprawnienia1.png" alt="Okno uprawnień">
     <div class="caption">Aby pobrać aktualne dane z FCLM należy kliknąć przycisk zaznaczony na screenie poniżej. </div>
   </div>
 
   <div class="shot">
-    <img src="../manual_assets/uprawnienia2.png" alt="Okno uprawnień">
+    <img src="uprawnienia2.png" alt="Okno uprawnień">
     <div class="caption">Następnie wybieramy ilość dni, klikamy "Pobierz Dane" i łączymy się w wyskakującym oknie za pomocą tokena.</div>  
   </div>
 
   <div class="shot">
-    <img src="../manual_assets/uprawnienia3.png" alt="Okno uprawnień">
+    <img src="uprawnienia3.png" alt="Okno uprawnień">
     <div class="caption"></div>
   </div>
 
@@ -319,37 +319,37 @@
   <h3>Tworzenie nowego planu</h3>
 
   <div class="shot">
-    <img src="../manual_assets/shiftplan1.png" alt="Okno uprawnień">
+    <img src="shiftplan1.png" alt="Okno uprawnień">
     <div class="caption"></div>
   </div>
 
   <div class="shot">
-    <img src="../manual_assets/shiftplan2.png" alt="Okno uprawnień">
+    <img src="shiftplan2.png" alt="Okno uprawnień">
     <div class="caption">Wybieramy datę oraz Zmianę DS/NS</div>
   </div>
 
   <div class="shot">
-    <img src="../manual_assets/shiftplan3.png" alt="Okno uprawnień">
+    <img src="shiftplan3.png" alt="Okno uprawnień">
     <div class="caption">Klikamy Wczytaj HC_TOD i wybieramy plik</div>
   </div>
 
   <div class="shot">
-    <img src="../manual_assets/shiftplan4.png" alt="Okno uprawnień">
+    <img src="shiftplan4.png" alt="Okno uprawnień">
     <div class="caption"></div>
   </div>
 
   <div class="shot">
-    <img src="../manual_assets/shiftplan5.png" alt="Okno uprawnień">
+    <img src="shiftplan5.png" alt="Okno uprawnień">
     <div class="caption">Następnie otwieramy edytor planu</div>
   </div>
 
   <div class="shot">
-    <img src="../manual_assets/shiftplan6.png" alt="Okno uprawnień">
+    <img src="shiftplan6.png" alt="Okno uprawnień">
     <div class="caption"></div>
   </div>
 
   <div class="shot">
-    <img src="../manual_assets/shiftplan7.png" alt="Okno uprawnień">
+    <img src="shiftplan7.png" alt="Okno uprawnień">
     <div class="caption">W lewym górnym rogu mamy zliczanie pracowników, datę zmiany oraz przycisk do zapisywania oraz czyszczenia planu.</div>
   </div>
 
@@ -360,9 +360,9 @@
   <li>W prawym górnym rogu znajduje się zakładka "Szkolenia" w której wypisane są szkolenia dla pracowników przypisanych do danego dnia w którym robimy plan. (Zapisywanie pracowników odbywa się w osobnej zakładce "Planowanie Szkoleń")
   <li>Dwukrotne kliknięcie w pracownika na liście włącza szczegóły pracownika i jego uprawnień.</li>
   <li>W przypadku gdy jakiś pracownik nie został zaciągnięty automatycznie można go dodać ręcznie z pomocą zakładki "+ Spoza". Wyszukujemy pracownika i przeciągamy go z listy na plan.</li><br>
-  <img src="../manual_assets/shiftplan8.png" alt="Okno uprawnień">
-  <img src="../manual_assets/shiftplan9.png" alt="Okno uprawnień">
-  <img src="../manual_assets/shiftplan10.png" alt="Okno uprawnień">
+  <img src="shiftplan8.png" alt="Okno uprawnień">
+  <img src="shiftplan9.png" alt="Okno uprawnień">
+  <img src="shiftplan10.png" alt="Okno uprawnień">
 
   <div class="warning">
     Przed usuwaniem lub nadpisywaniem planów upewnij się, że pracujesz na właściwej dacie i zmianie. W praktyce to najczęstsze źródło pomyłek.
