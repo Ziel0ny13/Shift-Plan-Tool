@@ -281,7 +281,7 @@
 
   <p>Na dole / po prawej stronie można od razu podejrzeć, kto już jest zapisany na wybrany dzień.</p>
 
-  <div class="warning"><strong></strong>Więcej przeszkolenia z tej funkcji odbędzie się przed PRIME TIME gdy szkolenie nowych pracowników będzie planowane w dużej ilości.</strong></div>
+  <div class="warning"><strong>Więcej przeszkolenia z tej funkcji odbędzie się przed PRIME TIME gdy szkolenie nowych pracowników będzie planowane w dużej ilości.</strong></div>
 
   <h2>7. Zakładka Overtime</h2>
   <p>Moduł overtime służy do planowania nadgodzin dla pracowników na konkretną datę i zmianę.</p>
